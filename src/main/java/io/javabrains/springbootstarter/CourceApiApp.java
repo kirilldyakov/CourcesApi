@@ -13,4 +13,4 @@ public class CourceApiApp {
 
 }
 
-//https://javabrains.io/courses/spring_bootquickstart/lessons/Implementing-Update-and-Delete/
+//https://javabrains.io/courses/spring_bootquickstart/lessons/Creating-a-Spring-Data-JPA-Repository/

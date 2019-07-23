@@ -1,6 +1,10 @@
 package io.javabrains.springbootstarter.topic;
 
+import javax.persistence.Entity;
+
+@Entity
 public class Topic {
+	
 	private String id;
 	private String name;
 	private String description;
