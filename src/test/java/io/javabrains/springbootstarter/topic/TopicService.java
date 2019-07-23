@@ -1,5 +1,6 @@
 package io.javabrains.springbootstarter.topic;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -10,12 +11,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Service
 public class TopicService {
 
-	private List<Topic> topics = Arrays.asList(
+	private List<Topic> topics = new ArrayList<>(Arrays.asList(
 			new Topic("spring", "12", "3"),
 			new Topic("java", "22", "3"),
 			new Topic("vb", "32", "3"),
 			new Topic("kotlin", "42", "3")
-			);
+			));
 	
 	public List<Topic> getAllTopics() {
 		return topics;
@@ -23,5 +24,10 @@ public class TopicService {
 	
 	public Topic getTopicById(String id) {
 		return topics.stream().filter(t -> t.getId().equals(id)).findFirst().get();
+	}
+
+	public void addTopic(Topic topic) {
+		topics.add(topic);
+		
 	}
 }
