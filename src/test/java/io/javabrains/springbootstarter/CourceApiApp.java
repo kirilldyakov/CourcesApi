@@ -12,3 +12,5 @@ public class CourceApiApp {
 	}
 
 }
+
+//https://javabrains.io/courses/spring_bootquickstart/lessons/Getting-a-single-resource/
